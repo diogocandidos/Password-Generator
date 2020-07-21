@@ -1,20 +1,19 @@
-//03 JavaScipt: Password Generator.
+// 03 JavaScipt: Password Generator.
 
 // The password generator will give a new password with at least 8 characters and no more than 128 characters.
 
-//Assignment Code.
+// Assignment Code.
     var generateBtn = document.querySelector("#generate");
 
-//Add event listener  when button clicked.
+// Add event listener when button clicked.
     generateBtn.addEventListener("click", writePassword);
 
-// Arrays
+// Arrays.
     var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var specialChar = ["!", "@", "%", "$", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~","_",];
     var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     
-
 // Variables.
     var confLength = "";
     var confLowerCase;
@@ -35,13 +34,13 @@
 // Confirm the amount of charactes the user selected.  
     alert(`Password will have ${confLength} characters`);
 
-// Parameters
+// Parameters.
     var confLowerCase = confirm("Would you like to include lower case letters in your password?");
     var confUpperCase = confirm("Would you like to include upper case letters in your password?");
     var confSpecialCharacter = confirm("Would you like to include special characters in your password?");
     var confNumericCharacter = confirm("Would you like to include numeric characters in your password?");    
 
-// Loop (If the answers do not not correspond the parameters)
+// Loop (If the answers do not not correspond the parameters).
     while(confUpperCase === false && confLowerCase === false && confSpecialCharacter === false && confNumericCharacter === false) {
         alert("The password needs to hold at least one parameter!");
 
@@ -72,7 +71,6 @@
      
       console.log(passwordCharacters)
 
-      
 // The value of the variable will be placed on for loop choosing random characters from the array (characters).
     var randomPassword = ""
      
@@ -82,9 +80,9 @@
     }
     
     return randomPassword;
-}
+    }
 
-// Write password to the #password input
+// Write password to the #password input.
     function writePassword() {
         var password = generatePassword();
         var passwordText = document.querySelector("#password");
