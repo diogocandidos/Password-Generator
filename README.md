@@ -6,3 +6,11 @@ After checking the specifications, when the user accesses the webpage he or she 
 Once the user selects the conditions, the website will provide a new password automatically. 
 
 Link: https://diogocandidos.github.io/Password-Generator/
+
+<img width="500" alt="contact" src="https://user-images.githubusercontent.com/61811579/91782270-78fff300-ebb1-11ea-86b3-c6c3f021249d.png">
+
+## Built With
+
+- HTML
+- CSS 
+- JavaScript
